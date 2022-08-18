@@ -5,3 +5,18 @@ module MyEnumerable
       end
       true
     end
+    def any?
+        each do |el|
+          return true if yield(el)
+        end
+        false
+      end
+    
+    #   def filter
+    #     array = []
+    #     each do |el|
+    #       array << el if yield(el)
+    #     end
+    #     array
+    #   end
+    end
