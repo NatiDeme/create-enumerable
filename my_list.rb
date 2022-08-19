@@ -4,9 +4,9 @@ class MyList
     @list = args
   end
 
-  # include MyEnumerable
+  include MyEnumerable
 
-  # def each
-  #   @list.each { |element| yield(element) if block_given? }
-  # end
+  def each
+    @list.each { |element| yield(element) if block_given? }
+  end
 end
