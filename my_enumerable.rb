@@ -13,11 +13,11 @@ module MyEnumerable
     false
   end
 
-    def filter
-      array = []
-      each do |element|
-        array << element if yield(element)
-      end
-      array
+  def filter
+    array = []
+    each do |element|
+      array << element if yield(element)
     end
+    array
+  end
 end
